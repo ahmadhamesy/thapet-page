@@ -59,33 +59,33 @@
             </h3>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators ">
-              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="secondd active" aria-current="true" aria-label="Slide 1"></button>
-              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="secondd " aria-label="Slide 2"></li>
-              <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="secondd " aria-label="Slide 3"></li>
-            </ol>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                   <h3 class="slider1">عمارات وبنايات</h3>
-                <img src="./images/photo2.jpg" class="d-block w-100 " alt="photo">
+                <img src="./images/photo2.jpg" class="d-blok w-100 " alt="photo">
               </div>
               <div class="carousel-item">
                 <h3 class="slider1">شقق سكنية</h3>
-                <img src="./images/photo3.jpg" class="d-block w-100" alt="photo2">
+                <img src="./images/photo3.jpg" class="d-blok w-100" alt="photo2">
               </div>
               <div class="carousel-item">
                 <h3 class="slider1">فيلا</h3>
-                <img src="./images/photo.jpg" class="d-block w-100" alt="photo3">
+                <img src="./images/photo.jpg" class="d-blok w-100" alt="photo3">
               </div>
             </div>
-            <button class="carousel-control-prev seco" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <i class="fas fa-angle-right fa-2x"></i>
-            </button>
-            <button class="carousel-control-next seco" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <i class="fas fa-angle-left fa-2x"></i>
-            </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"><i class="fas fa-angle-right fa-2x"></i></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"><i class="fas fa-angle-left fa-2x"></i></span>
+              </button>
           </div>
     </div>
 </section>
@@ -151,16 +151,16 @@
                   <div class="valid-feedback">
                     تهانينا لقد ادخلت بريد الكتروني صحيح
                   </div>
+                  <button class="btn btn-primary" type="submit">اشتراك</button>
                   <div class="invalid-feedback">
                     عذرا لقد ادخلت بريد الكتروني خاطأ
                   </div>
-                  <button class="btn btn-primary" type="submit">اشتراك</button>
                   </div>
               </form>
             </div>
             </div>
     <div class="container">
-        <ul class="list-inlineone text-center col-md-12">
+        <ul class="list-inlineone text-center">
             <li class="list-inline-item ">
                 <a href="#">
                     <p class="listed">عن ثابت العقارية</p>
@@ -211,5 +211,6 @@
         <p class="footerd">ثابت العقارية مرخصة ومسجلة تحت رقم 145862 صنعاء-اليمن</p>
     </div>
 </footer>
+<script src="js/jquery.js"></script>
 </body>
 </html>

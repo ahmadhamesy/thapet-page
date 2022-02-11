@@ -47,6 +47,13 @@ module.exports ={
                      'css-loader'
                  ]
              },
+             {
+                test: require.resolve("jquery"),
+                loader: "expose-loader",
+                options: {
+                  exposes: ["$", "jQuery"],
+                },
+              },
               ],
      },
      plugins:[

@@ -23,9 +23,6 @@ body{
 nav.navbar ul.navbar-nav{
     padding-right: 0;
 }
-.gg{
-    transition: all 5s ease;
-}
 nav.navbar ul.navbar-nav li a.nav-link{
     color: #000000;
     font-size: 16px;
@@ -81,38 +78,50 @@ section.slider .title h3{
     font-size: 36px;
 }
 section.slider .carousel-inner{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
+section.slider .carousel-inner .carousel-item{
+    position: relative;
+    transition: all 0.6s ease ;
+    backface-visibility: hidden;
+    line-height:80px;
+    
+}
+
 section.slider .carousel-indicators{
     padding: 0;bottom: -60px;
 }
-section.slider .carousel-indicators li{
+section.slider .carousel-indicators button{
+
     width: 20px;
     height: 20px;
-    border: 1px solid #007bff;
+    border: 1px solid #16aeca;
     border-radius: 50%;
+    margin-left: 1px;
+    margin-right:1px;
 }
-section.slider .carousel-indicators li.active{
-    background-color: #007bff;
+section.slider .carousel-indicators button.active{
+    background-color: #16aeca;
 }
 section.slider .carousel-control-next,
 section.slider .carousel-control-prev{
     width: 60px;
     height: 60px;
-    border: 1px solid #007bff;
+    border: 1px solid #16aeca;
     border-radius: 50%;
-    color: #007bff;
+    color: #16aeca;
     opacity: 1;
-    margin-top: 160px;
+    margin-top: 250px;
     justify-content: center;
 }
 .carousel-control-next-icon{
-    width: 15px;
+    width: 5px;
 }
 .carousel-control-prev-icon{
     width: 0px;
 }
+
 h3.slider1{
     text-align: center;
     margin-bottom: 30px;
@@ -175,20 +184,32 @@ footer .top-footer .overlay h3{
     height:3rem;
     margin-bottom: 20px;
     display: inline-block;
+    margin-left: -2.5px;
 
 }
 footer .btn{
     height: 3rem;
+    margin-left: 10px;
+    margin-top: -4px;
+    padding-left: 15px;
+    color: #ffffff;
+    background-color: #16aeca;
     
 }
 footer .list-inline .list-inline-item{
     font-size: 18px;
-    margin-right: 80px;
+    margin-right: 90px;
     margin-bottom: 20px;
+    margin-left: 90px;
+    
+}
+footer .list-inline .list-inline-item a{
+    color: #16aeca;
 }
 footer .list-inlineone .list-inline-item{
     font-size: 18px;
-    margin-right: 80px;
+    margin-right: 75px;
+    margin-left: 80px;
     margin-bottom: 20px;
 }
 p.listed{
@@ -204,8 +225,19 @@ p.footerd{
         color: transparent;
         background-color: transparent !important;
         border-color: transparent !important;
-        box-shadow: none;
+        box-shadow: none !important;
+        display: block !important;
         
+    }
+}
+@media(max-width:1200px){
+    footer .list-inline .list-inline-item{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    footer .list-inlineone .list-inline-item{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 @media(max-width:991px){
@@ -213,8 +245,17 @@ p.footerd{
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
+    section.slider .carousel-control-next,
+    section.slider .carousel-control-prev{
+        margin-top: 160px;
+    }
+    footer .list-inline .list-inline-item{
+        margin-left: 45px;
+        margin-right: 45px;
+    }
     footer .list-inlineone .list-inline-item{
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     nav.navbar .btn{
         color: transparent;
@@ -239,6 +280,10 @@ p.footerd{
         background-color: transparent !important;
         border-color: transparent !important;
     }
+    section.slider .carousel-control-next,
+    section.slider .carousel-control-prev{
+        margin-top: 150px;
+    }
     section.services .card{
         margin-bottom: 20px;
     }
@@ -247,10 +292,28 @@ p.footerd{
         margin: 0 auto;
     }
     footer .list-inline .list-inline-item{
-        margin-right: 55px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     footer .list-inlineone .list-inline-item{
-        margin-right: 0%;
+        display: block;
+        text-align: right !important;
     }
 }
-@media(max-width: 767px){}
+@media(max-width: 575px){
+    section.slider .carousel-control-next,
+    section.slider .carousel-control-prev{
+        margin-top: 150px;
+    }
+    p.overtext{
+        transform: translateY(200px);
+        font-size:25px;
+
+    }
+    footer .list-inline .list-inline-item{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+ 
+}
